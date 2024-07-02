@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+/*로고 스타일*/
+.logo {
+    left: 61px;
+    top: 14px;
+    width: 100px;
+    height: 27px;
+
+}
+
+/*상단 바 스타일*/
+.top-sidebar {
+    height: 53px;
+    width: 100%;
+    background-color: gray;
+    display: inline-flex;
+    justify-content: space-between;
+
+}
+
+/*상단 바에 글자 스타일*/
+.top-sidebar a {
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    margin-right: 10px;
+}
+
+/* 왼쪽 메뉴 정렬 */
+.menu-left {
+    margin-right: 130px;
+}
+
+/* 오른쪽 메뉴 정렬 */
+.menu-right {
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+
+/* 작업할 때 보기 편하게 여백없이 전부 잡았음 */
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* 마우스를 올렸을 때*/
+a:hover {
+    color: rgb(0, 43, 236);
+    text-decoration: underline;
+}
+
+.menu-item {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    align-items: center;
+}
+
+.submenu {
+    display: none;
+    /* 초기에는 하위 메뉴를 숨김 */
+}
+
+.mainimg {
+    float: left;
+    margin-right: 50px;
+
+}
+/* 푸터디자인 */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 12px;
+    padding-left: 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+
+}
+
+.container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.music-container {
+    float: right;
+    margin-right: 30px;
+}
+
+#songtitle {
+    margin-bottom: 10px;
+}
+
+#audioPlayerContainer {
+    clear: right;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Join Us - Liverpool FC</title>
+    <link rel="stylesheet" href="cssFile.css">
+    <style>
+        body {
+            background-image: url('https://mblogthumb-phinf.pstatic.net/MjAxODAzMDNfMjU4/MDAxNTIwMDQxODA4Mjc0.gR3L5xx3IbpACbvRRF9j9xjJmO-EPAY35oF1AdBnDcog.WZyeqFi6cMmH-v-R-ec44Ny6ZgVyAJIYMT78p4Rxbkwg.PNG.osy2201/2_%2850%ED%8D%BC%EC%84%BC%ED%8A%B8_%ED%9A%8C%EC%83%89%29_%ED%9A%8C%EC%83%89_%EB%8B%A8%EC%83%89_%EB%B0%B0%EA%B2%BD%ED%99%94%EB%A9%B4_180303.png?type=w800');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+	<header>
+        <nav>
+            <div class="top-sidebar">
+                <div>
+                    <a href="home.html">
+                        <img src="https://i.ibb.co/5nnKfs7/logo.png" alt="대체용 텍스트" class="logo">
+                    </a>
+                    <a href="Video.html">동물농장 영상</a>
+                    <a href="mu.html">음악</a>
+                    <a href="NewFile.html" class="menu-left">작품 구입하기</a>
+                </div>
+                <div>
+                    <a href="log.html" class="menu-right">로그인</a>
+                    <a href="my.html" class="menu-right">마이페이지</a>
+                    <a href="my.html" class="menu-right">장바구니</a>
+                    <a href="https://www.instagram.com/" class="menu-right">
+                        <img src="Instagram_logo_2022.svg" alt="Instagram" style="width: 20px; height: 20px;">
+                    </a>
+                    <a href="https://www.youtube.com/" class="menu-right">
+                        <img src="youtube_icon-icons.com_72036.png" alt="YouTube" style="width: 20px; height: 20px;">
+                    </a>
+                    <span>검색하기</span><input type="text" placeholder="검색하기">
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="container">
+        <h1>회원가입</h1>
+        <form action="#" id="register" onsubmit="return validateForm()">
+            <ul id="user-info">
+                <li>
+                    <label for="user-name" class="field">이름</label>
+                    <input type="text" id="user-name" onblur="checkFilled(this)">
+                </li>
+                <li>
+                    <label for="user-id" class="field">아이디</label>
+                    <input type="text" id="user-id" onblur="checkFilled(this)">
+                </li>
+                <li>
+                    <label for="email" class="field">Email</label>
+                    <input type="email" id="email" required>
+                </li>
+                <li>
+                    <label for="user-pw1" class="field">비밀번호</label>
+                    <input type="password" id="user-pw1" placeholder="8~15 characters" required onchange="checkPw()">
+                </li>
+                <li>
+                    <label for="user-pw2" class="field">비밀번호 확인</label>
+                    <input type="password" id="user-pw2" onchange="comparePw()">
+                    <span id="password-match-error" style="color: red; display: none;">비밀번호가 일치하지 않습니다.</span>
+                </li>
+                <li>
+                    <label for="phone" class="field">휴대폰 번호</label>
+                    <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" required>
+                </li>
+                <li>
+                    <label class="field">성별</label>
+                    <label class="r"><input type="radio" value="male" name="gender">남자</label>
+                    <label class="r"><input type="radio" value="female" name="gender">여자</label>
+                </li>
+                <li>
+                    <label class="field">이메일 수신동의</label>
+                    <label class="r"><input type="radio" value="yes" name="mailing">Yes</label>
+                    <label class="r"><input type="radio" value="no" name="mailing">No</label>
+                </li>
+            </ul>
+            <div id="buttons">
+                <button type="submit">회원가입</button>
+                <button type="reset">Reset</button>
+                <button onclick="closeWindowAfterDelay()">끝내기</button>
+            </div>
+        </form>
+    </div>
+	<script src="javasc.js"></script>
+    <footer>
+        <p>조이오웰코리아 인천 서구 가좌동 320-214 KD건물<br>
+            대표이사 :김선아 | 사업자등록번호 234-13-23464 | 통신판매업 신고번호 3245-용인처인-2142 | 종합안내번호 032-324-1241<br>
+            정보처리방침<br>
+
+            asfasf@naver.com <br>
+        </p>
+    </footer>
+</body>
+
+</html>
+
